@@ -1,5 +1,5 @@
 import React from "react"
-import Heading from "../../common/Heading"
+import Heading from "./../common/Heading"
 import "./Recent.css"
 import RecentCard from "./RecentCard"
 
