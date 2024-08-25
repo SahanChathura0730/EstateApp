@@ -12,12 +12,11 @@
  .hero h1 {
    color: #fff;
    font-size: 60px;
-   text-align: center;
+   align-content: center;
  }
  .hero p {
    color: #fff;
    opacity: 0.8;
-   text-align: center;
  }
  form {
    background-color: #fff;
@@ -50,19 +49,3 @@
  form h4 {
    font-weight: 500;
  }
- @media screen and (max-width: 800px) {
-   .hero .container {
-     padding-top: 30%;
-   }
-   form {
-     display: flex;
-     flex-wrap: wrap;
-   }
-   form .box {
-     border-left: none;
-   }
-   form input {
-     width: 100%;
-   }
- }
- 
