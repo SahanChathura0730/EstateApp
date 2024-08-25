@@ -1,0 +1,159 @@
+header {
+   background-color: #fff;
+   height: auto; /* Adjusted to fit content */
+   box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+   padding: 15px 0;
+   position: sticky;
+   top: 0;
+   z-index: 99999;
+   display: flex; /* Use flexbox layout */
+   flex-direction: row; /* Align items horizontally */
+   align-items: center; /* Center items vertically */
+ }
+ 
+ header .container {
+   display: flex;
+   justify-content: space-between; /* Push items to the left and right sides */
+   align-items: center; /* Center items vertically */
+   width: 100%;
+   padding: 0 20px; /* Optional: Add padding to container */
+ }
+ 
+ header .logo {
+   flex: 1; /* Allow the logo to take available space */
+ }
+ 
+ header .logo img {
+   width: 150px; /* Adjusted for better fit */
+   margin-bottom: 0; /* Remove space below the logo */
+ }
+ 
+ header .nav {
+   margin: 0; /* Remove default margin */
+ }
+ 
+ header .nav ul {
+   display: flex;
+   flex-direction: row; /* Stack nav items horizontally */
+   list-style: none; /* Remove default list styling */
+   padding: 0; /* Remove default padding */
+ }
+ 
+ header .nav ul li {
+   margin: 0 10px; /* Adjust spacing as needed */
+ }
+ 
+ header .nav ul li a {
+   text-decoration: none; /* Remove default underline */
+   color: #333; /* Default text color */
+   font-size: 16px; /* Adjust font size */
+   transition: color 0.3s ease; /* Smooth color transition */
+ }
+ 
+ header .nav ul li a:hover {
+   color: #27ae60; /* Color on hover */
+ }
+ 
+ header .button {
+   display: flex;
+   align-items: center; /* Center align text */
+   margin: 0 20px; /* Add space around button */
+ }
+ 
+ header .button h4 {
+   margin: 10px;
+   font-size: 18px; /* Adjust font size */
+   font-weight: 600; /* Adjust font weight */
+ }
+ 
+ header .button span {
+   background: #27ae60;
+   border-radius: 50px;
+   color: #fff;
+   padding: 0 6px;
+   font-weight: 400;
+ }
+ 
+ header .button .btn1 {
+   background: #27ae60;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   transition: background-color 0.3s ease;
+ }
+ 
+ header .button .btn1:hover {
+   background-color: #219150; /* Darker color on hover */
+ }
+ 
+ header .toggle {
+   display: none; /* Initially hidden */
+ }
+ 
+ header .toggle button {
+   background: #27ae60;
+   color: #fff;
+   border: none;
+   padding: 10px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 20px;
+ }
+ 
+ header .toggle button i {
+   margin-right: 5px; /* Space between icon and text */
+ }
+ 
+ @media screen and (max-width: 768px) {
+   header {
+     padding: 10px 0; /* Adjust padding for smaller screens */
+   }
+ 
+   header .container {
+     flex-direction: column; /* Stack items vertically in mobile view */
+     align-items: center; /* Center items horizontally */
+   }
+ 
+   header .logo {
+     margin-bottom: 20px; /* Space below logo */
+   }
+ 
+   header .nav {
+     margin: 0; /* Remove margin */
+   }
+ 
+   header .button {
+     display: none; /* Hide button in mobile view */
+   }
+ 
+   header .toggle {
+     display: block;
+     margin: 20px; /* Space above toggle button */
+   }
+ 
+   header .small {
+     position: absolute;
+     top: 10vh;
+     left: 0;
+     width: 100%;
+     background-color: #27ae60;
+     padding: 20px;
+     display: flex;
+     flex-direction: column; /* Stack nav items vertically in mobile menu */
+     align-items: center; /* Center items horizontally */
+   }
+ 
+   header .small li {
+     margin: 15px 0; /* Adjust spacing in mobile menu */
+   }
+ 
+   header li a {
+     display: block;
+     color: #fff;
+     font-size: 18px; /* Adjust font size for mobile */
+   }
+ }
+ 

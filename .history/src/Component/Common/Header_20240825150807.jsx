@@ -1,0 +1,29 @@
+import React from 'react'
+import { nav } from "../data/Data"
+import { Link } from "react-router-dom"
+
+const Header = () => {
+  return (
+    <div>
+      <header>
+         <div className="container flex">
+            <div className="logo">
+               <img src='/images/logo.png' alt='Logo'/>
+            </div>
+            <div className='nav'>
+            <ul>
+              {nav.map((list, index) => (
+                <li key={index}>
+                  <Link to={list.path}>{list.text}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+         </div>
+
+      </header>
+    </div>
+  )
+}
+
+export default Header

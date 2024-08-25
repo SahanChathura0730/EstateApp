@@ -1,0 +1,149 @@
+header {
+   background-color: #fff;
+   height: auto; /* Adjusted to fit content */
+   box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+   padding: 15px 0;
+   position: sticky;
+   top: 0;
+   z-index: 99999;
+   display: flex; /* Use flexbox layout */
+   flex-direction: raw;
+ }
+ 
+ header .container {
+   display: flex;
+   flex-direction: raw;
+
+   width: 100%;
+ }
+ 
+ header .logo img {
+   width: 150px; /* Adjusted for better fit */
+   margin-bottom: 20px; /* Add space below the logo */
+ }
+ 
+ header .nav {
+   margin: 10px 20px; /* Adjust spacing as needed */
+ }
+ 
+ header .nav ul {
+   display: flex;
+   flex-direction: raw;
+   list-style: none; /* Remove default list styling */
+   padding: 0; /* Remove default padding */
+ }
+ 
+ header .nav ul li {
+   margin: 10px 20px; /* Adjust spacing as needed */
+ }
+ 
+ header .nav ul li a {
+   text-decoration: none; /* Remove default underline */
+   color: #333; /* Default text color */
+   font-size: 16px; /* Adjust font size */
+   transition: color 0.3s ease; /* Smooth color transition */
+ }
+ 
+ header .nav ul li a:hover {
+   color: #27ae60; /* Color on hover */
+ }
+ 
+ header .button {
+   margin: 20px 0; /* Add space around button */
+   text-align: center; /* Center align text */
+   flex-direction: raw;
+ }
+ 
+ header .button h4 {
+   margin: 0;
+   font-size: 18px; /* Adjust font size */
+   font-weight: 600; /* Adjust font weight */
+ }
+ 
+ header .button span {
+   background: #27ae60;
+   border-radius: 50px;
+   color: #fff;
+   padding: 0 6px;
+   font-weight: 400;
+ }
+ 
+ header .button .btn1 {
+   background: #27ae60;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   transition: background-color 0.3s ease;
+ }
+ 
+ header .button .btn1:hover {
+   background-color: #219150; /* Darker color on hover */
+ }
+ 
+ header .toggle {
+   display: block;
+   margin-top: 20px; /* Adjust spacing as needed */
+   flex-direction: raw;
+ }
+ 
+ header .toggle button {
+   background: #27ae60;
+   color: #fff;
+   border: none;
+   padding: 10px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 20px;
+ }
+ 
+ header .toggle button i {
+   margin-right: 5px; /* Space between icon and text */
+ }
+ 
+ @media screen and (max-width: 768px) {
+   header {
+     padding: 10px 0; /* Adjust padding for smaller screens */
+   }
+ 
+   header .logo img {
+     margin-top: 20px; /* Adjust spacing for smaller screens */
+   }
+ 
+   header .button {
+     display: none;
+   }
+ 
+   header .nav .flex {
+     display: none;
+   }
+ 
+   header .toggle {
+     display: block;
+     margin-top: 20px;
+   }
+ 
+   header .small {
+     position: absolute;
+     top: 10vh;
+     left: 0;
+     width: 100%;
+     background-color: #27ae60;
+     padding: 20px;
+     display: flex;
+     flex-direction: column; /* Stack nav items vertically in mobile menu */
+     align-items: center; /* Center items horizontally */
+   }
+ 
+   header .small li {
+     margin: 15px 0; /* Adjust spacing in mobile menu */
+   }
+ 
+   header li a {
+     display: block;
+     color: #fff;
+     font-size: 18px; /* Adjust font size for mobile */
+   }
+ }
